@@ -1,0 +1,357 @@
+/* ====================================================
+		========>> [ Global styles ] <<========	
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2B2043;
+}
+
+.container {
+    width: 1200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*------------------------------------*\
+		Demo Menu
+\*------------------------------------*/
+
+.menu-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 33;
+    padding: 30px 0;
+    transition: all .5s;
+}
+
+nav.menu-area.topnav {
+    padding: 15px 0;
+    background: #8A62F0;
+    background: -webkit-linear-gradient(146deg, #8A62F0, #7142DF);
+    background: -moz-linear-gradient(146deg, #8A62F0, #7142DF);
+    background: -o-linear-gradient(146deg, #8A62F0, #7142DF);
+    background: linear-gradient(146deg, #8A62F0, #7142DF);
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.logo {}
+
+.logo img {}
+
+.demo-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.demo-nav li {
+    display: inline-block;
+}
+
+.demo-nav li a {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 7px;
+    display: inline-block;
+    margin: 0 13px;
+    position: relative;
+}
+
+.demo-nav li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.demo-nav li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/*------------------------------------*\
+		Demo Hero
+\*------------------------------------*/
+
+.demo-hero {
+    background-image: url(./dh.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 350px 0 300px; 
+    
+}
+
+.demo-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 67, 162, 0.82);
+}
+
+.demo-hero-text {}
+
+.demo-hero-text h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+}
+
+
+/*------------------------------------*\
+		Demo Body
+\*------------------------------------*/
+
+.demo-body {
+    padding-top: 120px;
+}
+
+.demo-body-title {
+    text-align: center;
+}
+
+.demo-body-title h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.demo-content {
+    margin-top: 40px;
+}
+
+.demo-img {
+    display: inline-block;
+    border: 1px solid #1add97;
+    transform: translateY(0);
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.08);
+    transition-property: box-shadow, -webkit-transform;
+    transition-property: transform, box-shadow;
+    transition-property: transform, box-shadow, -webkit-transform;
+    transition: .25s cubic-bezier(.215, .61, .355, 1);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.demo-content:hover .demo-img {
+    transform: translateY(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .05), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.demo-img img {}
+
+.demo-name {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 30px;
+    color: #1A2B48;
+    text-align: center;
+    margin-top: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.demo-content:hover .demo-name {
+    color: #1add97;
+}
+
+
+/*------------------------------------*\
+		why buy avabil start
+\*------------------------------------*/
+
+#why-ababil {
+    margin-top: 120px;
+}
+
+.why-avabil-item {}
+
+.why-avabil-item a:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+.why-avabil-item {
+    transform: translateY(0);
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.08);
+    transition-property: box-shadow, -webkit-transform;
+    transition-property: transform, box-shadow;
+    transition-property: transform, box-shadow, -webkit-transform;
+    transition: .25s cubic-bezier(.215, .61, .355, 1);
+    margin-top: 30px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.why-avabil-item:hover {
+    transform: translateY(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .05), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.why-avabil-item img {}
+
+.why-avabil-item h4 {
+    color: #4d5069;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.buy-avabil {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.buy-avabil a {
+    background: #1add97;
+    color: #fff;
+    padding: 19px 0px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 80px;
+    width: 200px;
+    text-align: center;
+    margin: 0 7px;
+    text-transform: uppercase;
+}
+
+#footer-area {
+    text-align: center;
+    padding: 80px 0 13px;
+}
+
+#footer-area p {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 30px;
+    color: #1A2B48;
+}
+
+
+/* Extra small Device. */
+
+@media (max-width: 768px) {
+    .d-table-cell h1 {
+        font-size: 49px;
+        line-height: 65px;
+    }
+    .demo-hero {
+        padding: 206px 0 150px; 
+    }
+    .demo-hero-text h1 {
+        font-size: 40px;
+        line-height: 66px;
+    }
+    .demo-nav li a {
+        font-size: 16px;
+        padding: 9px 3px;
+        margin: 0 6px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media (max-width: 480px) {
+    .d-table-cell h1 {
+        font-size: 43px;
+        line-height: 59px;
+    }
+    .container {
+        width: 320px;
+    }
+    #bannar-area {
+        padding: 100px 0;
+    }
+    .demo-nav li a {
+        font-size: 16px;
+        padding: 9px 3px;
+        margin: 0 6px;
+    }
+    .buy-avabil a { 
+        margin: 10px 0px; 
+    }
+    .logo {
+        width: 80px;
+        margin: 0;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .demo-hero-text h1 {
+        font-size: 24px;
+        line-height: 43px;
+    }
+    .demo-hero {
+        padding: 153px 0 78px;
+    }
+    .demo-body {
+        padding-top: 63px;
+    }.demo-body-title h2 { 
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media (max-width: 414px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media (min-width: 360px) and (max-width: 478px) {}
+
+
+/* Custom, iPhone Retina */
+
+@media (min-width: 320px) and (max-width: 478px) {
+    .menu-area li a {
+        font-size: 11px;
+        margin: 0 3px;
+    }
+    .d-table-cell h1 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+}
